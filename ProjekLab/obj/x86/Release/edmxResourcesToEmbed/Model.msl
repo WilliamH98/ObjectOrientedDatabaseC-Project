@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WatchDBModelStoreContainer" CdmEntityContainer="WatchDBEntities">
+    <EntitySetMapping Name="DetailSales1">
+      <EntityTypeMapping TypeName="WatchDBModel.DetailSales">
+        <MappingFragment StoreEntitySet="DetailSales">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="WatchId" ColumnName="WatchId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesTransactions">
+      <EntityTypeMapping TypeName="WatchDBModel.SalesTransaction">
+        <MappingFragment StoreEntitySet="SalesTransaction">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="WatchDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Watches">
+      <EntityTypeMapping TypeName="WatchDBModel.Watch">
+        <MappingFragment StoreEntitySet="Watch">
+          <ScalarProperty Name="WatchStock" ColumnName="WatchStock" />
+          <ScalarProperty Name="WatchPrice" ColumnName="WatchPrice" />
+          <ScalarProperty Name="WatchTypeId" ColumnName="WatchTypeId" />
+          <ScalarProperty Name="WatchName" ColumnName="WatchName" />
+          <ScalarProperty Name="WatchId" ColumnName="WatchId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WatchTypes">
+      <EntityTypeMapping TypeName="WatchDBModel.WatchType">
+        <MappingFragment StoreEntitySet="WatchType">
+          <ScalarProperty Name="WatchDescription" ColumnName="WatchDescription" />
+          <ScalarProperty Name="WatchTypeName" ColumnName="WatchTypeName" />
+          <ScalarProperty Name="WatchTypeId" ColumnName="WatchTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

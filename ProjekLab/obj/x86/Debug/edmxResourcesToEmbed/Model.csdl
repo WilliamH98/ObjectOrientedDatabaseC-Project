@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WatchDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="WatchDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DetailSales1" EntityType="WatchDBModel.DetailSales" />
+    <EntitySet Name="SalesTransactions" EntityType="WatchDBModel.SalesTransaction" />
+    <EntitySet Name="Users" EntityType="WatchDBModel.User" />
+    <EntitySet Name="Watches" EntityType="WatchDBModel.Watch" />
+    <EntitySet Name="WatchTypes" EntityType="WatchDBModel.WatchType" />
+    <AssociationSet Name="FK_DetailSales_SalesTransaction" Association="WatchDBModel.FK_DetailSales_SalesTransaction">
+      <End Role="SalesTransaction" EntitySet="SalesTransactions" />
+      <End Role="DetailSale" EntitySet="DetailSales1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetailSales_Watch" Association="WatchDBModel.FK_DetailSales_Watch">
+      <End Role="Watch" EntitySet="Watches" />
+      <End Role="DetailSale" EntitySet="DetailSales1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesTransaction_User" Association="WatchDBModel.FK_SalesTransaction_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="SalesTransaction" EntitySet="SalesTransactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Watch_WatchType" Association="WatchDBModel.FK_Watch_WatchType">
+      <End Role="WatchType" EntitySet="WatchTypes" />
+      <End Role="Watch" EntitySet="Watches" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="DetailSales">
+    <Key>
+      <PropertyRef Name="TransactionId" />
+      <PropertyRef Name="WatchId" />
+    </Key>
+    <Property Type="String" Name="TransactionId" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="WatchId" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <NavigationProperty Name="SalesTransaction" Relationship="WatchDBModel.FK_DetailSales_SalesTransaction" FromRole="DetailSale" ToRole="SalesTransaction" />
+    <NavigationProperty Name="Watch" Relationship="WatchDBModel.FK_DetailSales_Watch" FromRole="DetailSale" ToRole="Watch" />
+  </EntityType>
+  <EntityType Name="SalesTransaction">
+    <Key>
+      <PropertyRef Name="TransactionId" />
+    </Key>
+    <Property Type="String" Name="TransactionId" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="TransactionDate" Nullable="false" />
+    <Property Type="String" Name="UserId" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="DetailSales" Relationship="WatchDBModel.FK_DetailSales_SalesTransaction" FromRole="SalesTransaction" ToRole="DetailSale" />
+    <NavigationProperty Name="User" Relationship="WatchDBModel.FK_SalesTransaction_User" FromRole="SalesTransaction" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="String" Name="UserId" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="Fullname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Phone" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Role" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SalesTransactions" Relationship="WatchDBModel.FK_SalesTransaction_User" FromRole="User" ToRole="SalesTransaction" />
+  </EntityType>
+  <EntityType Name="Watch">
+    <Key>
+      <PropertyRef Name="WatchId" />
+    </Key>
+    <Property Type="String" Name="WatchId" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="WatchName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WatchTypeId" Nullable="false" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="WatchPrice" Nullable="false" />
+    <Property Type="Int32" Name="WatchStock" Nullable="false" />
+    <NavigationProperty Name="DetailSales" Relationship="WatchDBModel.FK_DetailSales_Watch" FromRole="Watch" ToRole="DetailSale" />
+    <NavigationProperty Name="WatchType" Relationship="WatchDBModel.FK_Watch_WatchType" FromRole="Watch" ToRole="WatchType" />
+  </EntityType>
+  <EntityType Name="WatchType">
+    <Key>
+      <PropertyRef Name="WatchTypeId" />
+    </Key>
+    <Property Type="String" Name="WatchTypeId" Nullable="false" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="WatchTypeName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WatchDescription" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Watch" Relationship="WatchDBModel.FK_Watch_WatchType" FromRole="WatchType" ToRole="Watch" />
+  </EntityType>
+  <Association Name="FK_DetailSales_SalesTransaction">
+    <End Type="WatchDBModel.SalesTransaction" Role="SalesTransaction" Multiplicity="1" />
+    <End Type="WatchDBModel.DetailSales" Role="DetailSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesTransaction">
+        <PropertyRef Name="TransactionId" />
+      </Principal>
+      <Dependent Role="DetailSale">
+        <PropertyRef Name="TransactionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetailSales_Watch">
+    <End Type="WatchDBModel.Watch" Role="Watch" Multiplicity="1" />
+    <End Type="WatchDBModel.DetailSales" Role="DetailSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Watch">
+        <PropertyRef Name="WatchId" />
+      </Principal>
+      <Dependent Role="DetailSale">
+        <PropertyRef Name="WatchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesTransaction_User">
+    <End Type="WatchDBModel.User" Role="User" Multiplicity="1" />
+    <End Type="WatchDBModel.SalesTransaction" Role="SalesTransaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="SalesTransaction">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Watch_WatchType">
+    <End Type="WatchDBModel.WatchType" Role="WatchType" Multiplicity="1" />
+    <End Type="WatchDBModel.Watch" Role="Watch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WatchType">
+        <PropertyRef Name="WatchTypeId" />
+      </Principal>
+      <Dependent Role="Watch">
+        <PropertyRef Name="WatchTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

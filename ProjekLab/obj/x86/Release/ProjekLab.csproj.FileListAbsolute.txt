@@ -1,0 +1,42 @@
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.ChangePasswordForm.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.LoginForm.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.MainForm.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.RegisterForm.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.csproj.GenerateResource.Cache
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\bin\Release\ProjekLab.exe
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\bin\Release\ProjekLab.pdb
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.exe
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.pdb
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\bin\Release\ProjekLab.exe.config
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.MasterUser.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.Master_Watch_Form.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.MasterWatchType.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.MainFormAdmin.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\obj\x86\Release\ProjekLab.MainFormMember.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\bin\Release\WatchDB.mdf
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB\ProjekLab\bin\Release\WatchDB_log.ldf
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\bin\Release\WatchDB.mdf
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\bin\Release\WatchDB_log.ldf
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\bin\Release\Model.Designer.cs
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\bin\Release\ProjekLab.exe.config
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\bin\Release\ProjekLab.exe
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\bin\Release\ProjekLab.pdb
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.ChangePasswordForm.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.LoginForm.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.MainForm.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.MainFormAdmin.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.MainFormMember.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.MasterUser.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.Master_Watch_Form.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.MasterWatchType.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.RegisterForm.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.csproj.GenerateResource.Cache
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.exe
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.pdb
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.BuyWatchForm.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.ViewAllTransactionForm.resources
+C:\Users\ASUS\Desktop\Projek LAB\ProjekLabOODB (EDMX)\ProjekLab\obj\x86\Release\ProjekLab.ViewHistoryForm.resources
